@@ -21,7 +21,7 @@ entries: map[hash,embed] = {
             }
         }
         loadscreen: embed = CensoredImage {
-            image: string = "ASSETS/Characters/Hwei/Skins/Skin0/HweiLoadScreen_0.dds"
+            image: string = "ASSETS/Characters/Hwei/Skins/Skin0/HweiLoadScreen_0.tex"
         }
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
@@ -217,7 +217,7 @@ entries: map[hash,embed] = {
         skinMeshProperties: embed = SkinMeshDataProperties {
             skeleton: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base.skl"
             simpleSkin: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base.skn"
-            texture: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base_TX_CM.dds"
+            texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Body.tex"
             skinScale: f32 = 1.14999998
             selfIllumination: f32 = 0.699999988
             reflectionFresnelColor: rgba = { 0, 0, 0, 255 }
@@ -225,55 +225,55 @@ entries: map[hash,embed] = {
             submeshRenderOrder: string = "Hair Body PaletteA"
             materialOverride: list[embed] = {
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Body.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Body.tex"
                     submesh: string = "Mat_Body"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Coat.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Coat.tex"
                     submesh: string = "Mat_Coat"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eye.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eye.tex"
                     submesh: string = "Mat_Eye"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyebrow.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyebrow.tex"
                     submesh: string = "Mat_Eyebrow"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyelash.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyelash.tex"
                     submesh: string = "Mat_Eyelash"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyeshadow.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyeshadow.tex"
                     submesh: string = "Mat_Eyeshadow"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyewet.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Eyewet.tex"
                     submesh: string = "Mat_Eyewet"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Hair.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Hair.tex"
                     submesh: string = "Mat_Hair"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_HandL.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_HandL.tex"
                     submesh: string = "Mat_HandL"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_HandR.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_HandR.tex"
                     submesh: string = "Mat_HandR"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Head.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Head.tex"
                     submesh: string = "Mat_Head"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Leg.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Leg.tex"
                     submesh: string = "Mat_Leg"
                 }
                 SkinMeshDataProperties_MaterialOverride {
-                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Weapon.dds"
+                    texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Weapon.tex"
                     submesh: string = "Mat_Weapon"
                 }
             }
@@ -355,17 +355,17 @@ entries: map[hash,embed] = {
         defaultAnimations: list[string] = {
             "Additive_Pallet_BuffBone_Offset"
         }
-        iconAvatar: string = "ASSETS/Characters/Hwei/HUD/Hwei_Circle_0.dds"
         mContextualActionData: link = "Characters/Hwei/CAC/Hwei_Base"
         iconCircle: option[string] = {
-            "ASSETS/Characters/Hwei/HUD/Hwei_Circle_0.dds"
+            "ASSETS/Characters/Hwei/HUD/Hwei_Circle_0.tex"
         }
         iconSquare: option[string] = {
-            "ASSETS/Characters/Hwei/HUD/Hwei_Square_0.dds"
+            "ASSETS/Characters/Hwei/HUD/Hwei_Square_0.tex"
         }
+        iconAvatar: string = "ASSETS/Characters/Hwei/HUD/Hwei_Circle_0.tex"
         healthBarData: embed = CharacterHealthBarDataRecord {
             attachToBone: string = "Buffbone_Cstm_Healthbar"
-            unitHealthBarStyle: u8 = 11
+            unitHealthBarStyle: u8 = 12
         }
         mResourceResolver: link = "Characters/Hwei/Skins/Skin0/Resources"
     }
@@ -1870,7 +1870,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -1878,7 +1878,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -1897,7 +1897,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -2529,7 +2529,7 @@ entries: map[hash,embed] = {
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                    textureMult: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                     texDivMult: vec2 = { 2, 2 }
                     birthUvScrollRateMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.100000001, 0 }
@@ -3010,7 +3010,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.tex"
                 numFrames: u16 = 4
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
                     paletteTexture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Gradient02.tex"
@@ -3391,7 +3391,7 @@ entries: map[hash,embed] = {
                     }
                     erosionFeatherIn: f32 = 0.200000003
                     erosionFeatherOut: f32 = 0.200000003
-                    erosionMapName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_ErosionPack02.dds"
+                    erosionMapName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_ErosionPack02.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -3402,7 +3402,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 1.00999999, 1.00999999, 1.00999999 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_E_OilySmoke_erode.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_E_OilySmoke_erode.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -3494,7 +3494,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
         }
@@ -6900,7 +6900,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0.176470593, 0.670588255, 0.701960802, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
         }
@@ -7286,7 +7286,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -7346,7 +7346,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -7483,7 +7483,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 0 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
                     textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_PaintStrokeDiffuse03.tex"
@@ -9089,7 +9089,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -9097,7 +9097,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -9116,7 +9116,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -9316,7 +9316,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 10, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -9333,7 +9333,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -9359,7 +9359,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -9382,7 +9382,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 9898
                 meshRenderFlags: u8 = 0
@@ -9390,7 +9390,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -9409,7 +9409,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -9849,7 +9849,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.dds"
+                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -9905,7 +9905,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
             }
@@ -10079,7 +10079,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.dds"
+                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -10136,7 +10136,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -10344,7 +10344,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.dds"
+                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -10401,7 +10401,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
             }
@@ -10520,7 +10520,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_E_white_RGB.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_E_white_RGB.tex"
                 }
             }
         }
@@ -10546,7 +10546,7 @@ entries: map[hash,embed] = {
                 }
                 isSingleParticle: flag = true
                 emitterName: string = "Distort2"
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -10554,7 +10554,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -10573,7 +10573,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.100000001
@@ -12332,7 +12332,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 230, 640, 0 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -12399,10 +12399,10 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 110, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.tex"
                 texDiv: vec2 = { -1, 1 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.dds"
+                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.5, 1 }
                     }
@@ -12656,10 +12656,10 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 110, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.tex"
                 texDiv: vec2 = { -1, 1 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.dds"
+                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.5, 1 }
                     }
@@ -12775,7 +12775,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.dds"
+                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.5, 1 }
                     }
@@ -15590,7 +15590,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0.494117647, 0.188235298, 0.521568656, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
         }
@@ -16250,7 +16250,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -18482,7 +18482,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -18544,7 +18544,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -18606,7 +18606,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -18678,7 +18678,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -20111,7 +20111,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.tex"
                 }
             }
             VfxEmitterDefinitionData {
@@ -21452,7 +21452,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.329411775, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -22359,7 +22359,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0, 0, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -22416,7 +22416,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -22539,7 +22539,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -22841,7 +22841,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -23660,7 +23660,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { -10, 125, -150 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -23677,7 +23677,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0199999996
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Q_Ezreal_Skin15_Q_distortion_soundwaves_01.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Q_Ezreal_Skin15_Q_distortion_soundwaves_01.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -23703,7 +23703,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
         }
         particleName: string = "Hwei_Base_R_cas"
@@ -24310,7 +24310,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Brand/Skins/Skin08/Particles/Brand_Skin08_E_SmokeTip.dds"
+                texture: string = "ASSETS/Characters/Brand/Skins/Skin08/Particles/Brand_Skin08_E_SmokeTip.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 2, 1 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -25961,7 +25961,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 300, 640, 0 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -26083,7 +26083,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.tex"
             }
         }
         visibilityRadius: f32 = 400
@@ -26117,7 +26117,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 8000
                 meshRenderFlags: u8 = 0
@@ -26125,7 +26125,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -26144,7 +26144,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -26388,7 +26388,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.tex"
                 numFrames: u16 = 4
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
                     paletteTexture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Gradient02.tex"
@@ -26842,7 +26842,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
             }
@@ -27492,7 +27492,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori.tex"
                 particleUVScrollRate: embed = IntegratedValueVector2 {
                     constantValue: vec2 = { -1, 0 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -27524,7 +27524,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori02.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori02.tex"
                 }
             }
             VfxEmitterDefinitionData {
@@ -27652,7 +27652,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori.tex"
                 particleUVScrollRate: embed = IntegratedValueVector2 {
                     constantValue: vec2 = { -1, 0 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -27684,7 +27684,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori02.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Hori02.tex"
                 }
             }
         }
@@ -29823,7 +29823,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 110, 1, 1 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.tex"
                 texDiv: vec2 = { -1, 1 }
             }
             VfxEmitterDefinitionData {
@@ -30287,7 +30287,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -30295,7 +30295,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -30314,7 +30314,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -30675,7 +30675,7 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 80
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 0.300000012
+                    constantValue: f32 = 0.349999994
                 }
                 particleLinger: option[f32] = {
                     1
@@ -30704,14 +30704,30 @@ entries: map[hash,embed] = {
                     }
                 }
                 blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                        }
+                    }
+                }
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
                         times: list[f32] = {
                             0
+                            0.100000001
                             0.5
                             1
                         }
                         values: list[vec4] = {
+                            { 1, 1, 1, 0 }
                             { 1, 1, 1, 1 }
                             { 1, 0.529411793, 0.529411793, 1 }
                             { 0, 0, 0, 0 }
@@ -30762,7 +30778,7 @@ entries: map[hash,embed] = {
                     }
                     paletteCount: i32 = 4
                 }
-                texDiv: vec2 = { 2.5, 1 }
+                texDiv: vec2 = { 2, 1 }
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -30892,7 +30908,7 @@ entries: map[hash,embed] = {
                 }
             }
             VfxEmitterDefinitionData {
-                timeBeforeFirstEmission: f32 = 0.100000001
+                timeBeforeFirstEmission: f32 = 0.0500000007
                 rate: embed = ValueFloat {
                     constantValue: f32 = 1
                 }
@@ -30932,7 +30948,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                pass: i16 = 75
+                pass: i16 = 318
                 isRotationEnabled: flag = true
                 TextureFlipU: flag = true
                 birthRotation0: embed = ValueVector3 {
@@ -30963,7 +30979,7 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 80
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 0.400000006
+                    constantValue: f32 = 0.5
                 }
                 particleLinger: option[f32] = {
                     0.349999994
@@ -30980,7 +30996,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 EmitterPosition: embed = ValueVector3 {
-                    constantValue: vec3 = { 0, 125, 0 }
+                    constantValue: vec3 = { 0, 100, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryTrail {
                     mTrail: embed = VfxTrailDefinitionData {
@@ -30993,14 +31009,30 @@ entries: map[hash,embed] = {
                     }
                 }
                 blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                        }
+                    }
+                }
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
                         times: list[f32] = {
                             0
+                            0.100000001
                             0.5
                             1
                         }
                         values: list[vec4] = {
+                            { 1, 1, 1, 0 }
                             { 1, 1, 1, 1 }
                             { 1, 1, 1, 1 }
                             { 0, 0, 0, 0 }
@@ -31008,6 +31040,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 pass: i16 = 307
+                alphaRef: u8 = 0
                 alphaErosionDefinition: pointer = VfxAlphaErosionDefinitionData {
                     erosionDriveCurve: embed = ValueFloat {
                         dynamics: pointer = VfxAnimatedFloatVariableData {
@@ -31402,7 +31435,7 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 80
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 0.400000006
+                    constantValue: f32 = 0.5
                 }
                 particleLinger: option[f32] = {
                     0.349999994
@@ -31419,7 +31452,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 EmitterPosition: embed = ValueVector3 {
-                    constantValue: vec3 = { 0, 125, 0 }
+                    constantValue: vec3 = { 0, 150, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryTrail {
                     mTrail: embed = VfxTrailDefinitionData {
@@ -31432,16 +31465,33 @@ entries: map[hash,embed] = {
                     }
                 }
                 blendMode: u8 = 4
-                color: embed = ValueColor {
+                birthColor: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
                         times: list[f32] = {
                             0
+                            0.100000001
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                        }
+                    }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.993240237, 0.931609035, 0.716029584, 0.501960814 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
                             0.5
                             1
                         }
                         values: list[vec4] = {
-                            { 1, 1, 1, 1 }
-                            { 1, 1, 1, 1 }
+                            { 0.993240237, 0.931609035, 0.716029584, 0 }
+                            { 0.993240237, 0.931609035, 0.716029584, 0.501960814 }
+                            { 0.993240237, 0.931609035, 0.716029584, 0.501960814 }
                             { 0, 0, 0, 0 }
                         }
                     }
@@ -31471,17 +31521,14 @@ entries: map[hash,embed] = {
                 particleIsLocalOrientation: flag = true
                 ParticlesShareRandomValue: flag = true
                 birthScale0: embed = ValueVector3 {
-                    constantValue: vec3 = { 25, 1, 1 }
+                    constantValue: vec3 = { 30, 1, 1 }
                 }
                 texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_PaintStrokeDiffuse.tex"
                 texDiv: vec2 = { 3, 1 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
                     textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_GoldFoilMult.tex"
-                    uvScaleMult: embed = ValueVector2 {
-                        constantValue: vec2 = { 4, 4 }
-                    }
                     birthUvScrollRateMult: embed = ValueVector2 {
-                        constantValue: vec2 = { 0, 3 }
+                        constantValue: vec2 = { 1, 0 }
                     }
                     birthUVOffsetMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0, -0.400000006 }
@@ -31578,7 +31625,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 EmitterPosition: embed = ValueVector3 {
-                    constantValue: vec3 = { 0, 85, 0 }
+                    constantValue: vec3 = { 0, 50, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryTrail {
                     mTrail: embed = VfxTrailDefinitionData {
@@ -31605,7 +31652,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                pass: i16 = 450
+                pass: i16 = 320
                 alphaErosionDefinition: pointer = VfxAlphaErosionDefinitionData {
                     erosionDriveCurve: embed = ValueFloat {
                         dynamics: pointer = VfxAnimatedFloatVariableData {
@@ -31699,7 +31746,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 EmitterPosition: embed = ValueVector3 {
-                    constantValue: vec3 = { 0, 85, 0 }
+                    constantValue: vec3 = { 0, 50, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryTrail {
                     mTrail: embed = VfxTrailDefinitionData {
@@ -31714,6 +31761,18 @@ entries: map[hash,embed] = {
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 0.847058833, 0.454901963, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.847058833, 0.454901963, 0 }
+                            { 1, 0.847058833, 0.454901963, 1 }
+                            { 1, 0.847058833, 0.454901963, 1 }
+                        }
+                    }
                 }
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -31729,7 +31788,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                pass: i16 = 451
+                pass: i16 = 321
                 alphaErosionDefinition: pointer = VfxAlphaErosionDefinitionData {
                     erosionDriveCurve: embed = ValueFloat {
                         dynamics: pointer = VfxAnimatedFloatVariableData {
@@ -31961,7 +32020,7 @@ entries: map[hash,embed] = {
                 texture: string = "ASSETS/Characters/Udyr/Skins/Base/Particles/Udyr_Base_VGU_Awaken_Glow.dds"
             }
             VfxEmitterDefinitionData {
-                timeBeforeFirstEmission: f32 = 0.100000001
+                timeBeforeFirstEmission: f32 = 0.0500000007
                 rate: embed = ValueFloat {
                     constantValue: f32 = 1
                 }
@@ -32001,7 +32060,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                pass: i16 = 85
+                pass: i16 = 319
                 isRotationEnabled: flag = true
                 TextureFlipU: flag = true
                 birthRotation0: embed = ValueVector3 {
@@ -35113,7 +35172,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.333333343, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
         }
@@ -35205,7 +35264,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -35263,7 +35322,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -35356,7 +35415,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -35416,7 +35475,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
                 uvScale: embed = ValueVector2 {
@@ -38113,7 +38172,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.tex"
                 }
             }
             VfxEmitterDefinitionData {
@@ -39239,7 +39298,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.333333343, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -39526,7 +39585,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 15, -100 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -39543,7 +39602,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -39569,7 +39628,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.5
@@ -40199,7 +40258,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 300, 250, 1 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 textureMult: pointer = VfxTextureMultDefinitionData {
                     textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_QE_AlphaGlowmask.tex"
                     texAddressModeMult: u8 = 2
@@ -41444,7 +41503,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 4.75
@@ -42404,7 +42463,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 15, -100 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -42421,7 +42480,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -42447,7 +42506,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 4.75
@@ -42472,7 +42531,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 15, -100 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -42489,7 +42548,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -42515,7 +42574,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 4.5
@@ -42558,7 +42617,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { -150, 125, -150 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -42577,7 +42636,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.00999999978
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isDirectionOriented: flag = true
@@ -42604,7 +42663,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 8.48900032
@@ -42821,7 +42880,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0, 0, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -42948,7 +43007,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 0 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -43046,7 +43105,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { 150, 125, -150 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -43065,7 +43124,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.00999999978
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isDirectionOriented: flag = true
@@ -43092,7 +43151,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 4.75
@@ -45488,7 +45547,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 0 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -45849,7 +45908,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Karthus/Skins/Base/Particles/common_color-bellcurve.dds"
+                texture: string = "ASSETS/Characters/Karthus/Skins/Base/Particles/common_color-bellcurve.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, -0.0500000007 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -46929,7 +46988,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Brand/Skins/Skin08/Particles/Brand_Skin08_E_SmokeTip.dds"
+                texture: string = "ASSETS/Characters/Brand/Skins/Skin08/Particles/Brand_Skin08_E_SmokeTip.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 2, 1 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -47584,7 +47643,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/VGU_FlameShape.tex"
                 numFrames: u16 = 4
                 paletteDefinition: pointer = VfxPaletteDefinitionData {
                     paletteTexture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Gradient02.tex"
@@ -47617,7 +47676,7 @@ entries: map[hash,embed] = {
             VfxAssetRemap {
                 type: u32 = 1
                 oldAsset: hash = 0xacb30df5
-                newAsset: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/common_Smoke_Clouds_2x2_colorblind.dds"
+                newAsset: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/common_Smoke_Clouds_2x2_colorblind.tex"
             }
         }
     }
@@ -49690,7 +49749,7 @@ entries: map[hash,embed] = {
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.100000001, 0.100000001 }
                     }
@@ -49852,7 +49911,7 @@ entries: map[hash,embed] = {
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Support.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_HolyStrings_Support.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.5, 0.5 }
                     }
@@ -50463,7 +50522,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 75, 0 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -50471,7 +50530,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -50490,7 +50549,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -51752,7 +51811,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.dds"
+                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -51810,7 +51869,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -51969,7 +52028,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 10, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -51986,7 +52045,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -52012,7 +52071,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -52086,7 +52145,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 715, 640, 0 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -52857,7 +52916,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, -0.200000003 }
                 }
@@ -52982,7 +53041,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 2.29999995, 6, 2.29999995 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -54332,7 +54391,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring.tex"
                 texDiv: vec2 = { 1, -1 }
             }
             VfxEmitterDefinitionData {
@@ -54416,7 +54475,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_Shield.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_Shield.tex"
                 texDiv: vec2 = { 1, -1 }
             }
             VfxEmitterDefinitionData {
@@ -54468,9 +54527,9 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 110, 115, 0 }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring_Edge.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Glow_Ring_Edge.tex"
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Wave_Vertical.dds"
+                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Wave_Vertical.tex"
                     texAddressModeMult: u8 = 2
                     birthUVOffsetMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0, 0.100000001 }
@@ -54772,7 +54831,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.dds"
+                    textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_W_dash_sub.tex"
                     uvScaleMult: embed = ValueVector2 {
                         constantValue: vec2 = { 0.5, 1 }
                     }
@@ -56021,7 +56080,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -56083,7 +56142,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -56147,7 +56206,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.dds"
+                    erosionMapName: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_Gradient.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -56218,7 +56277,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.dds"
+                texture: string = "ASSETS/Characters/Caitlyn/Skins/Skin22/Particles/Caitlyn_Skin22_passive_GroundSmoke02.tex"
                 numFrames: u16 = 2
                 texDiv: vec2 = { 1, 2 }
             }
@@ -58509,7 +58568,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { 0, -25, 0 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -58526,7 +58585,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.100000001
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
@@ -58553,7 +58612,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -58595,7 +58654,7 @@ entries: map[hash,embed] = {
                     emitOffset: vec3 = { 0, 10, 0 }
                 }
                 primitive: pointer = VfxPrimitiveArbitraryQuad {}
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -58612,7 +58671,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0149999997
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Lux_Skin07_R_Circle_normal.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -58638,7 +58697,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -58851,7 +58910,7 @@ entries: map[hash,embed] = {
                         }
                     }
                     erosionFeatherOut: f32 = 0.200000003
-                    erosionMapName: string = "ASSETS/Characters/Lulu/Skins/Skin26/Particles/Lulu_Skin26_Erosion02.dds"
+                    erosionMapName: string = "ASSETS/Characters/Lulu/Skins/Skin26/Particles/Lulu_Skin26_Erosion02.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -59141,7 +59200,7 @@ entries: map[hash,embed] = {
                 }
                 isSingleParticle: flag = true
                 emitterName: string = "Distort1"
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -59149,7 +59208,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -59168,7 +59227,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.349999994
@@ -59589,7 +59648,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 300, 640, 0 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -59932,7 +59991,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Karthus/Skins/Base/Particles/common_color-bellcurve.dds"
+                texture: string = "ASSETS/Characters/Karthus/Skins/Base/Particles/common_color-bellcurve.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, -0.0500000007 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -60583,7 +60642,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GlowSoft.tex"
             }
         }
         visibilityRadius: f32 = 400
@@ -62379,7 +62438,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleBirthScaleByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.dds"
+                particleColorTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_color-rampdown32_03.tex"
                 blendMode: u8 = 1
                 pass: i16 = 50
                 meshRenderFlags: u8 = 0
@@ -62387,7 +62446,7 @@ entries: map[hash,embed] = {
                 colorLookUpOffsets: vec2 = { 0.300000012, 0 }
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.0900000036
-                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_distort-pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -62406,7 +62465,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.dds"
+                texture: string = "ASSETS/Characters/KSante/Skins/Base/Particles/common_Aura_Self.tex"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -66443,7 +66502,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -68819,7 +68878,7 @@ entries: map[hash,embed] = {
                         }
                     }
                     erosionFeatherOut: f32 = 0.200000003
-                    erosionMapName: string = "ASSETS/Characters/Lulu/Skins/Skin26/Particles/Lulu_Skin26_Erosion02.dds"
+                    erosionMapName: string = "ASSETS/Characters/Lulu/Skins/Skin26/Particles/Lulu_Skin26_Erosion02.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -70249,7 +70308,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -71131,7 +71190,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -71408,7 +71467,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0, 0, 0, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -71474,7 +71533,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -71532,7 +71591,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 1, 0.666666687, 0, 0 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
                     textureMult: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_PaintStrokeDiffuse03.tex"
@@ -72562,7 +72621,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.tex"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.150000006
@@ -73052,7 +73111,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -74021,7 +74080,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.tex"
                 particleUVScrollRate: embed = IntegratedValueVector2 {
                     constantValue: vec2 = { 1, 0 }
                     dynamics: pointer = VfxAnimatedVector2fVariableData {
@@ -74653,7 +74712,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.dds"
+                texture: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/TEMP_Hwei_P_color-hold.tex"
                 birthUvScrollRate: embed = ValueVector2 {
                     constantValue: vec2 = { 0, -0.200000003 }
                 }
@@ -75549,7 +75608,7 @@ entries: map[hash,embed] = {
                 EmitterPosition: embed = ValueVector3 {
                     constantValue: vec3 = { 0, 75, 0 }
                 }
-                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.dds"
+                particleColorTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_color-rampdown32.tex"
                 blendMode: u8 = 1
                 color: embed = ValueColor {
                     dynamics: pointer = VfxAnimatedColorVariableData {
@@ -75566,7 +75625,7 @@ entries: map[hash,embed] = {
                 alphaRef: u8 = 0
                 distortionDefinition: pointer = VfxDistortionDefinitionData {
                     distortion: f32 = 0.100000001
-                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.dds"
+                    normalMapTexture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_Recall_chargeup_Distort_Pinch.tex"
                 }
                 miscRenderFlags: u8 = 1
                 isUniformScale: flag = true
@@ -75592,7 +75651,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.dds"
+                texture: string = "ASSETS/Characters/Kayle/Skins/Skin15/Particles/Kayle_Skin15_R_White.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -75905,7 +75964,7 @@ entries: map[hash,embed] = {
                     }
                 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
-                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.dds"
+                    textureMult: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Gwen_Base_W_color-hold.tex"
                 }
             }
             VfxEmitterDefinitionData {
@@ -77176,7 +77235,7 @@ entries: map[hash,embed] = {
                     fresnelColor: vec4 = { 0.176470593, 0.670588255, 0.701960802, 1 }
                 }
                 depthBiasFactors: vec2 = { -1, -1 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.DDS"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Draven_Base_W_Color-hold.tex"
                 texDiv: vec2 = { 0.449999988, 0.449999988 }
             }
             VfxEmitterDefinitionData {
@@ -77390,7 +77449,7 @@ entries: map[hash,embed] = {
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 290, 640, 0 }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.dds"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_GroundBaseLayer.tex"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -77950,7 +78009,7 @@ entries: map[hash,embed] = {
                             }
                         }
                     }
-                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.dds"
+                    erosionMapName: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_E_ErosionShapes01.tex"
                     erosionMapChannelMixer: embed = ValueColor {
                         constantValue: vec4 = { 1, 0, 0, 0 }
                     }
@@ -78007,7 +78066,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.dds"
+                texture: string = "ASSETS/Characters/KogMaw/Skins/Skin37/Particles/KogMaw_Skin37_AnimeShapes02.tex"
                 numFrames: u16 = 4
                 texDiv: vec2 = { 2, 2 }
                 textureMult: pointer = VfxTextureMultDefinitionData {
@@ -79259,28 +79318,28 @@ entries: map[hash,embed] = {
         name: string = "Characters/Hwei/Skins/Skin0/Materials/Hwei_PBR_VFX_Palette"
         samplerValues: list2[embed] = {
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Diffuse_Texture"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base_Weapon_TX_CM.dds"
+                textureName: string = "Diffuse_Texture"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base_Weapon_TX_CM.tex"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "Scroll_Texture"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette02.tex"
+                textureName: string = "Scroll_Texture"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette02.tex"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "EmissionR_DistortionG_Texture"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette03.tex"
+                textureName: string = "EmissionR_DistortionG_Texture"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette03.tex"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "RMA_Texture"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_RMATXT.tex"
+                textureName: string = "RMA_Texture"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_RMATXT.tex"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "ScreenSpaceTex"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_SSGold.tex"
+                textureName: string = "ScreenSpaceTex"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_SSGold.tex"
             }
             StaticMaterialShaderSamplerDef {
-                samplerName: string = "ScreenSpace_Mask"
-                textureName: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_RMATXT.tex"
+                textureName: string = "ScreenSpace_Mask"
+                texturePath: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/Hwei_Base_Foundation_Palette_RMATXT.tex"
             }
         }
         paramValues: list2[embed] = {

@@ -217,7 +217,7 @@ entries: map[hash,embed] = {
         skinMeshProperties: embed = SkinMeshDataProperties {
             skeleton: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base.skl"
             simpleSkin: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base.skn"
-            texture: string = "ASSETS/Characters/Hwei/Skins/Base/Mat_Body.tex"
+            texture: string = "ASSETS/Characters/Hwei/Skins/Base/Hwei_Base_TX_CM.tex"
             skinScale: f32 = 1.14999998
             selfIllumination: f32 = 0.699999988
             reflectionFresnelColor: rgba = { 0, 0, 0, 255 }
@@ -3860,7 +3860,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -4026,7 +4025,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -4219,7 +4217,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -4371,7 +4368,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -4555,7 +4551,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -4721,7 +4716,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -4985,7 +4980,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -5064,7 +5059,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -5219,7 +5213,6 @@ entries: map[hash,embed] = {
                 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 birthRotation0: embed = ValueVector3 {
                     constantValue: vec3 = { 200, 0, 0 }
                 }
@@ -9543,7 +9536,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -17885,7 +17878,6 @@ entries: map[hash,embed] = {
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 2, 2, 2 }
@@ -18049,7 +18041,6 @@ entries: map[hash,embed] = {
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 2, 2, 2 }
@@ -18220,7 +18211,6 @@ entries: map[hash,embed] = {
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
                 particleIsLocalOrientation: flag = true
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 birthScale0: embed = ValueVector3 {
                     constantValue: vec3 = { 2, 2, 2 }
@@ -22225,7 +22215,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.100000001
@@ -22303,7 +22293,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -22841,7 +22831,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.tex"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.dds"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -28184,7 +28174,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
@@ -47675,7 +47665,7 @@ entries: map[hash,embed] = {
         assetRemappingTable: list[embed] = {
             VfxAssetRemap {
                 type: u32 = 1
-                oldAsset: hash = 0xacb30df5
+                oldAsset: hash = 0xe80d270d
                 newAsset: string = "ASSETS/Characters/Hwei/Skins/Base/Particles/common_Smoke_Clouds_2x2_colorblind.tex"
             }
         }
@@ -60836,7 +60826,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -60914,7 +60904,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -63009,7 +62999,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -63957,7 +63947,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.dds"
+                texture: string = "ASSETS/Characters/Naafiri/Skins/Base/Particles/Naafiri_Base_Foundation_Glow01.Naafiri_Midscope.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -68357,7 +68347,6 @@ entries: map[hash,embed] = {
                 colorLookUpScales: vec2 = { 1, 0 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 isGroundLayer: flag = true
                 TextureFlipU: flag = true
@@ -69004,7 +68993,6 @@ entries: map[hash,embed] = {
                 colorLookUpScales: vec2 = { 1, 0 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 isGroundLayer: flag = true
                 TextureFlipU: flag = true
@@ -69478,7 +69466,6 @@ entries: map[hash,embed] = {
                 colorLookUpScales: vec2 = { 1, 0 }
                 disableBackfaceCull: bool = true
                 miscRenderFlags: u8 = 1
-                doesCastShadow: flag = true
                 isRotationEnabled: flag = true
                 isGroundLayer: flag = true
                 TextureFlipU: flag = true
@@ -73111,7 +73098,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.tex"
+                texture: string = "ASSETS/Characters/Gwen/Skins/Base/Particles/Generic_RingSircle.dds"
                 uvRotation: embed = ValueFloat {
                     constantValue: f32 = 90
                 }
